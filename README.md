@@ -5,3 +5,5 @@ The bot does not use any database schemas, I'd suggest you to go ahead and look 
 I made this bot last summer without any prior knowledge in web apps or JS. Provided, I did have understanding of Java and Object Oriented Programming therefore it was
 not hard for me to catch up with most of the tutorials found online and once I got the hang of it, and created a nice setup, it was all about searching for libraries
 to make the bot do cool stuff. You guys should experiemnt in your own ways and have fun!
+
+I used heroku to host my web app.
