@@ -8,7 +8,7 @@ module.exports = {
         if(!channel) return
         const usertext = receivedMessage.content.toString()
         
-            const monkey_api = 'SE2SoHPqfQ0mkJ9UMf9uXimmK'
+            const monkey_api = \\THE MONKEY API\\
            
         fetch(`https://api.monkedev.com/fun/chat?msg=${usertext}&uid=${receivedMessage.author.id}&key=${monkey_api}`)
         .then(response => response.json())
