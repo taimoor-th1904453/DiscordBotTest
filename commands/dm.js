@@ -6,7 +6,7 @@ module.exports = {
     execute(client, receivedMessage,command, args, Discord) {
         const usertext = receivedMessage.content.toString()
         
-            const monkey_api = 'SE2SoHPqfQ0mkJ9UMf9uXimmK'
+            const monkey_api = \\THE MONKEY API KEY\\
            
         fetch(`https://api.monkedev.com/fun/chat?msg=${usertext}&uid=${receivedMessage.author.id}&key=${monkey_api}`)
         .then(response => response.json())
