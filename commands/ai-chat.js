@@ -10,7 +10,9 @@ module.exports = {
         
             const MONKEY_API = 'SE2SoHPqfQ0mkJ9UMf9uXimmK'
            
-        fetch(`https://api.monkedev.com/fun/chat?msg=${usertext}&uid=${receivedMessage.author.id}&key=${MONKEY_API}`)
+        fetch(`http://api.brainshop.ai/get?bid=169199&key=5riVVxrFoizwxSiI&uid=${receivedMessage.author.id}&msg=${usertext}`)
+        
+
         .then(response => response.json())
         .then(data => {
             setTimeout(() => {
