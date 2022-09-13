@@ -31,6 +31,7 @@ module.exports = (Discord, client, receivedMessage) =>{
    if(!receivedMessage.content.startsWith(prefix) || !cmd) return;
 	 if(receivedMessage.content.startsWith(prefix) || cmd){
 	try {
+console.log("Prefix executed")
 		cmd.execute(client, receivedMessage,command, args, Discord);
 		return;
 	} catch (error) {
