@@ -3,7 +3,7 @@ module.exports = {
     name: 'dm',
     aliases: [],
     description: 'this is dm command',
-    execute(client, receivedMessage,command, args, Discord) {
+    async execute(client, receivedMessage,command, args, Discord) {
         const usertext = receivedMessage.content.toString()
         
             const monkey_api = 'SE2SoHPqfQ0mkJ9UMf9uXimmK'
@@ -11,14 +11,14 @@ module.exports = {
             
 
 
-        fetch(`https://api.monkedev.com/fun/chat?msg=${usertext}&uid=${receivedMessage.author.id}&key=${monkey_api}`)
+        await fetch(`http://api.brainshop.ai/get?bid=169199&key=5riVVxrFoizwxSiI&uid=${receivedMessage.author.id}&msg=${usertext}`)
         .then(response => response.json())
         .then(data => {
-            receivedMessage.channel.send(data.response)
+            receivedMessage.channel.send(data.cnt)
         })
-        .catch(()=>{
-            receivedMessage.channel.send("I'm Sorry, I didn't quite get that. Let me rest for a bit, I'll reply later Zzz")
-        })
+        // .catch(()=>{
+        //     receivedMessage.channel.send("I'm Sorry, I didn't quite get that. Let me rest for a bit, I'll reply later Zzz")
+        // })
 
 
         
