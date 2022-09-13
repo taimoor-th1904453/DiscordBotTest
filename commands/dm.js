@@ -8,6 +8,9 @@ module.exports = {
         
             const monkey_api = 'SE2SoHPqfQ0mkJ9UMf9uXimmK'
            
+            
+
+
         fetch(`https://api.monkedev.com/fun/chat?msg=${usertext}&uid=${receivedMessage.author.id}&key=${monkey_api}`)
         .then(response => response.json())
         .then(data => {
