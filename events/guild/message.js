@@ -1,9 +1,9 @@
 require('dotenv').config()
 module.exports = (Discord, client, receivedMessage) =>{
    const prefix = process.env.PREFIX;
-   console.log("This is prefix")
-   console.log(prefix)
-   console.log("=======================")
+  //  console.log("This is prefix")
+  //  console.log(prefix)
+  //  console.log("=======================")
    
     if(receivedMessage.author.bot) return;
       if(!(receivedMessage.channel.type === 'dm')){
