@@ -1,6 +1,7 @@
 require('dotenv').config()
 module.exports = (Discord, client, receivedMessage) =>{
-    const prefix = process.env.PREFIX;
+   // const prefix = process.env.PREFIX;
+    const prefix = 'F';
     if(receivedMessage.author.bot) return;
       if(!(receivedMessage.channel.type === 'dm')){
         const channel = receivedMessage.guild.channels.cache.find(c => c.name === 'ai-chat');
