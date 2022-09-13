@@ -8,9 +8,9 @@ module.exports = {
         if(!channel) return
         const usertext = receivedMessage.content.toString()
         
-            const monkey_api = 'SE2SoHPqfQ0mkJ9UMf9uXimmK'
+            const MONKEY_API = 'SE2SoHPqfQ0mkJ9UMf9uXimmK'
            
-        fetch(`https://api.monkedev.com/fun/chat?msg=${usertext}&uid=${receivedMessage.author.id}&key=${monkey_api}`)
+        fetch(`https://api.monkedev.com/fun/chat?msg=${usertext}&uid=${receivedMessage.author.id}&key=${MONKEY_API}`)
         .then(response => response.json())
         .then(data => {
             setTimeout(() => {
