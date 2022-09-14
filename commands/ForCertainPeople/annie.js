@@ -1,11 +1,11 @@
 const fetch = require('node-fetch').default;
 module.exports = {
-    name: 'shlay',
-    aliases: ['shray'],
+    name: 'annie',
+    aliases: ['anni','ann','anh','any'],
     description: 'this is a shlay command',
     execute(client, receivedMessage,command, args, Discord){
         
-        if(receivedMessage.author.id != '718887304353284210') return receivedMessage.channel.send('Lol this command is not for you.')
+        if(receivedMessage.author.id != '848625313558036511') return receivedMessage.channel.send('Lol this command is not for you.')
         
         
         fetch(`https://complimentr.com/api`)
