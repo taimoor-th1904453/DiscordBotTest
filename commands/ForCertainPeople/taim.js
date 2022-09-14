@@ -1,6 +1,7 @@
 const fetch = require('node-fetch').default;
 module.exports = {
     name: 'taim',
+    aliases: ['taimy'],
     description: 'this is a taim command',
     execute(client, receivedMessage,command, args, Discord){
         
