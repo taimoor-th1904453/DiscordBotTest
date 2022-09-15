@@ -10,6 +10,12 @@ module.exports = {
         console.log(usertext)
         
             const MONKEY_API = 'SE2SoHPqfQ0mkJ9UMf9uXimmK'
+
+            const regex = /\p{Extended_Pictographic}/u
+            const isEmoji = regex.test(receivedMessage.content)
+            console.log(regex.test(receivedMessage.content))
+            if(isEmoji) return channel.send("Please don't use emojis with me... I won't understand Emojis.")
+            
            
          const  response = await fetch(`http://api.brainshop.ai/get?bid=169199&key=5riVVxrFoizwxSiI&uid=${receivedMessage.author.id}&msg=${usertext}`)
         // console.log(response)

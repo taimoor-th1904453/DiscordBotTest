@@ -4,7 +4,9 @@ module.exports = (Discord, client, receivedMessage) =>{
   //  console.log("This is prefix")
   //  console.log(prefix)
   //  console.log("=======================")
-   
+  //  console.log(receivedMessage.content)
+
+
     if(receivedMessage.author.bot) return;
       if(!(receivedMessage.channel.type === 'dm')){
         const channel = receivedMessage.guild.channels.cache.find(c => c.name === 'ai-chat');
